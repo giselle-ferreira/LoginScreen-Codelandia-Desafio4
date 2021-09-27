@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------- Html -------- */
+html {
+  position: fixed;
+  background: linear-gradient(to left, #fff 50%, #f7fafc 0%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex; 
+}
+
+/* -------- Images -------- */
+
+body .images {
+  width: 50vw;
+  height: 100vh;
+  margin-top: 90px;
+  text-align: center;
+  justify-content: center;
+}
+
+.images .row-1 .circles {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.images .row-1 .circles img {
+  width: 12.74px;
+  margin-right: 9.2px;
+  height: auto;
+}
+
+.images .row-1 .menu {
+  margin-left: 300px;
+  width: 18px;
+  height: auto;
+}
+
+.images .row-2 {
+  margin-bottom: 33px;
+}
+
+.images .row-4 {
+  margin-bottom: 50px;
+}
+
+.images .img-row-1 {
+  margin-bottom: 10px;
+}
+
+.images .img-row-1 img {
+  margin: 21px;
+  width: 84.5px;
+  height: auto;
+}
+
+.images .img-row-2 {
+  margin-bottom: auto;
+}
+
+.images .img-row-2 img {
+  margin: 21px;
+  width: 84.5px;
+  height: auto;
+}
+
+/* -------- Login -------- */
+
+body .login {
+  width: 50vw;
+  height: 100vh;
+  margin-top: 90px;
+}
+
+.input-fields {
+  margin: auto;
+  max-width: fit-content;
+}
+
+.input-fields h2 {
+  font: normal 16px/20px 'Merriweather', serif;
+  text-align:
+}
+
+.input-fields h1 {
+  margin: auto;
+  margin-top: 7px; 
+  font: normal bold 26px/33px 'Merriweather', serif;
+  justify-content: flex-start;
+}
+
+.input-fields h3 {
+  margin-top: 39px;
+  margin-bottom: 11px;
+  font: normal 400 16px/19px 'Lato', serif;
+  color: #1A202C;
+}
+
+.input-fields input {
+  width: 350px;
+  height: 59px;
+  border-radius: 5px;
+  border: 1px solid #E8E8E8;
+  font: normal 400 14px/16px 'Lato', serif;
+  color: #1A202C;
+  padding: 17px 0px 16px 20px;
+}
+
+.input-fields h4 {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font: normal 400 16px/19px 'Lato', serif;
+  color: #1A202C;
+}
+
+.login .options {
+  margin: auto;
+  margin-top: 28px;
+  display: flex;
+  font: normal 400 14px/17px 'Lato', serif;
+  max-width: fit-content;
+}
+
+.login .options #lembreDeMim {
+  color: #1A202C;
+  margin-right: 11px;
+  width: 15px;
+  height: 15px;
+}
+
+.login .options a {
+  color: #2B6CB0;
+  text-decoration: none;
+  margin-left: 94px;
+}
+
+/* --------- Buttons ---------  */
+.buttons {
+  flex-direction: column;
+  margin: auto;
+  width: 347px;
+  height: 50px;
+}
+
+.buttons .submit1 {
+  background:#04C35C;
+  font: normal 700 16px/19px 'Lato', serif;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  width: 347px;
+  height: 50px;
+  margin-top: 26px;
+  cursor: pointer;
+}
+
+.buttons .submit1:hover {
+  transform: scale(1.07);
+  transition: all ease 0.5s;
+}
+
+.buttons .submit2 {
+  background:#1A202C;
+  font: normal 700 16px/19px 'Lato', serif;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 347px;
+  height: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 15px 61px 16px 59px;
+}
+
+.buttons .submit2:hover {
+  transform: scale(1.07);
+  transition: all ease 0.5s;
+}
+
+.buttons .submit2 img {
+  margin-right: 11px;
+}
+
+.buttons p {
+  font: normal 400 16px/19px 'Lato', serif;
+  margin-top: 20px;
+  margin-bottom: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.buttons p a {
+  color: #2B6CB0;
+  text-decoration: none;
+}
+
+/* ------------- Media -------------  */
+/* -------- Smartphone -------- */
+@media(max-width: 480px) {
+
+  html {
+    background: #fff;
+  }
+
+  body .images {
+    display: none;
+  }
+
+  body .login {
+    width: 100vw;
+  }
+  
+  .buttons p {
+    margin-top: 100px;
+  }
+  
+}
+
+/* -------- Tablet -------- */
+@media(max-width: 768px) {
+
+  body .images {
+    margin-top: 110px;
+  }
+
+  .images .row-1 .circles img {
+    width: 12.74px;
+    height: auto;
+  }
+  
+  .images .row-1 .menu {
+    margin-left: 200px;
+  }
+  
+  .images .row-2 {
+    transform-origin: center;
+    transform: scale(0.8);
+  }
+
+  .images .img-row-1 img {
+    margin: 15px;
+    width: 65px;
+  }
+  
+  .images .img-row-2 img {
+    margin: 15px;
+    width: 65px;
+  }
+
+  body .login {
+    transform-origin: center;
+    transform: scale(0.95);
+  }
+
+  .buttons p {
+    margin-top: 100px;
+  }
+
+}

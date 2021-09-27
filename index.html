@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- Images -->
+    <div class="images">
+      <div class="row-1">
+        <div class="circles">
+          <img src="/assets/Vectorcircle.svg" />
+          <img src="/assets/Vectorcircle.svg" />
+          <img src="/assets/Vectorcircle.svg" />
+        </div>
+
+        <img class="menu" src="/assets/menu.svg" />
+      </div>
+      <div class="row-2">
+        <img src="/assets/Vectorline.svg" />
+      </div>
+      <div class="row-3">
+        <img src="/assets/Vectorline2.svg" />
+      </div>
+      <div class="row-4">
+        <img src="/assets/Vectorline3.svg" />
+      </div>
+      <div class="image-rows">
+        <div class="img-row-1">
+          <img src="/assets/Vectorwoman1.svg" />
+          <img src="/assets/Vectorwoman2.svg" />
+          <img src="/assets/Vectorman1.svg" />
+        </div>
+
+        <div class="img-row-2">
+          <img src="/assets/Vectorman2.svg" />
+          <img src="/assets/Vectorwoman3.svg" />
+          <img src="/assets/Vectorman3.svg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Login -->
+    <div class="login">
+      <div class="input-fields">
+        <h2>Bem-vindo de volta</h2>
+        <h1>Faça login na sua conta</h1>
+        <h3>E-mail</h3>
+        <label for="E-mail">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="exemplo@exemplo.com.br"
+            required
+          />
+        </label>
+        <h4>Senha</h4>
+        <label for="Senha">
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="insira sua senha"
+            required
+          />
+        </label>
+      </div>
+
+      <div class="options">
+        <input type="radio" id="lembreDeMim" />
+        <label for="lembreDeMim">Lembre de mim</label>
+        <a href="#abrirModal">Esqueceu sua senha?</a>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="submit" class="submit1">Entrar</button>
+        <button type="submit" class="submit2">
+          <img src="assets/googleicon.svg" />
+          ou faça login com o Google
+        </button>
+        <p>Não tem uma conta? <a href=""> Cadastre-se</a></p>
+      </div>
+    </div>
+  </body>
+</html>
