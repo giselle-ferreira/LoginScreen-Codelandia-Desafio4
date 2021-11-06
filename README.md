@@ -10,7 +10,7 @@
 + HTML
 + CSS
 + Responsive Layout
-+ Javascript (Form Validadation)
++ Javascript (Form Validation)
 
 <br>
 
