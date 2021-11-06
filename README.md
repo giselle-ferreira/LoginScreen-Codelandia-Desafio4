@@ -10,6 +10,7 @@
 + HTML
 + CSS
 + Responsive Layout
++ Javascript (Form Validadation)
 
 <br>
 
@@ -31,3 +32,8 @@
 
 >## Desktop
 <img src="https://github.com/giselle-ferreira/TelaDeLogin-Codelandia-Desafio4/blob/main/assets/login-desktop.png"/>
+
+<br>
+
+>## Form Validation
+<img src="https://github.com/giselle-ferreira/LoginScreen-Codelandia-Desafio4/blob/main/assets/video/validation.gif" />
