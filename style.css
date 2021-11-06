@@ -111,6 +111,7 @@ body .login {
   font: normal 400 14px/16px 'Lato', serif;
   color: #1A202C;
   padding: 17px 0px 16px 20px;
+  outline: none;
 }
 
 .input-fields h4 {
@@ -161,9 +162,13 @@ body .login {
   cursor: pointer;
 }
 
-.buttons .submit1:hover {
-  transform: scale(1.07);
-  transition: all ease 0.5s;
+.submit1:hover {
+  background-color: #6cc595;
+}
+
+.submit1:active {
+  transform: scale(.9);
+  transition: all ease 0.1s;
 }
 
 .buttons .submit2 {
@@ -180,9 +185,13 @@ body .login {
   padding: 15px 61px 16px 59px;
 }
 
-.buttons .submit2:hover {
-  transform: scale(1.07);
-  transition: all ease 0.5s;
+.submit2:hover {
+  background-color: #35383b;
+}
+
+.submit2:active {
+  transform: scale(.9);
+  transition: all ease 0.1s;
 }
 
 .buttons .submit2 img {
@@ -200,6 +209,13 @@ body .login {
 .buttons p a {
   color: #2B6CB0;
   text-decoration: none;
+}
+
+.error {
+  display: block;
+  font: normal 700 13px/20px 'Lato', serif;
+  color: red;
+  display: none;
 }
 
 /* ------------- Media -------------  */

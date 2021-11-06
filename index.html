@@ -62,46 +62,53 @@
 
     <!-- Login -->
     <div class="login">
-      <div class="input-fields">
-        <h2>Bem-vindo de volta</h2>
-        <h1>Faça login na sua conta</h1>
-        <h3>E-mail</h3>
-        <label for="E-mail">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="exemplo@exemplo.com.br"
-            required
-          />
-        </label>
-        <h4>Senha</h4>
-        <label for="Senha">
-          <input
-            type="password"
-            name="senha"
-            id="senha"
-            placeholder="insira sua senha"
-            required
-          />
-        </label>
-      </div>
+      <form name="loginform" action="" onsubmit="return validForm()">
+        <div class="input-fields">
+          <h2>Bem-vindo de volta</h2>
+          <h1>Faça login na sua conta</h1>
+          <h3>E-mail</h3>
+          <label for="E-mail">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="exemplo@exemplo.com.br"
+            />
+            <span class="error">Favor inserir seu email.</span>
+          </label>
+          <h4>Senha</h4>
+          <label for="Senha">
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="insira sua senha"
+            />
+            <span class="error"
+              >A senha deve conter mínimo 6 caracteres, com números<br />e
+              letras maiúsculas e minúsculas.</span
+            >
+          </label>
+        </div>
 
-      <div class="options">
-        <input type="radio" id="lembreDeMim" />
-        <label for="lembreDeMim">Lembre de mim</label>
-        <a href="#abrirModal">Esqueceu sua senha?</a>
-      </div>
+        <div class="options">
+          <input type="radio" id="lembreDeMim" />
+          <label for="lembreDeMim">Lembre de mim</label>
+          <a href="#abrirModal">Esqueceu sua senha?</a>
+        </div>
 
-      <!-- Buttons -->
-      <div class="buttons">
-        <button type="submit" class="submit1">Entrar</button>
-        <button type="submit" class="submit2">
-          <img src="assets/googleicon.svg" />
-          ou faça login com o Google
-        </button>
-        <p>Não tem uma conta? <a href=""> Cadastre-se</a></p>
-      </div>
+        <!-- Buttons -->
+        <div class="buttons">
+          <button type="submit" value="submit" class="submit1">Entrar</button>
+          <button type="submit" class="submit2">
+            <img src="assets/googleicon.svg" />
+            ou faça login com o Google
+          </button>
+          <p>Não tem uma conta? <a href=""> Cadastre-se</a></p>
+        </div>
+      </form>
     </div>
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>
